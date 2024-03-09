@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","mappings":";;;;;AAAA;AACA;AACA;AACA;AACA;;AAEA,uC","sources":["webpack://math-it/./src/index.ts"],"sourcesContent":["function component() {\n    const element = document.createElement('div');\n    element.innerHTML = \"Hello webpack!\";\n    return element;\n}\n\ndocument.body.appendChild(component());"],"names":[],"sourceRoot":""}
