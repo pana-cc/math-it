@@ -4,7 +4,7 @@ function render() {
     let mmToInch = 1 / 25.4;
 
     const printableWidthInMM = 200;
-    const printableHeightInMM = 279;
+    const printableHeightInMM = 260;
 
     let dpi = 300;
     let xPixels = Math.ceil(dpi * printableWidthInMM * mmToInch);
@@ -105,7 +105,7 @@ function render() {
 
             const columnChars = 17;
             const problemRowLines = 7;
-            const problemRowOffset = 2;
+            const problemRowOffset = 0;
             const problemColumnOffset = -3;
 
             const firstNumberLength = random(3, 6);
