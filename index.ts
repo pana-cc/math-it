@@ -11,6 +11,10 @@ function render() {
     let yPixels = Math.floor(dpi * printableHeightInMM * mmToInch);
 
     html += `<h1 class="non-printable">Math Generator</h1>`;
+    html += `<h2 class="non-printable">Multiplication</h2>`;
+    html += `<p class="non-printable">The page contains two printable sheets - one with math multiplication problems; a second one with the solutions.</p>`;
+    html += `<p class="non-printable">Printing should fit into two A4 sheets of paper. Make sure you are not printing two-sided.</p>`;
+    html += `<p class="non-printable"><a class="non-printable button" onclick="location.reload()">Randomize</a><a class="non-printable button" onclick="window.print();">Print</a></p>`;
 
     let svgProblems = ``;
     let svgSolutions = ``;
@@ -102,7 +106,7 @@ function render() {
             const columnChars = 17;
             const problemRowLines = 7;
             const problemRowOffset = 2;
-            const problemColumnOffset = -2;
+            const problemColumnOffset = -3;
 
             const firstNumberLength = random(3, 6);
             const secondNumberLength = random(2, Math.min(4, firstNumberLength - 1));
@@ -203,7 +207,9 @@ function render() {
     svgProblems += `</svg>`;
     svgSolutions += `</svg>`;
 
+    html += `<h3 class="non-printable">Multiplication problems page</h3>`;
     html += svgProblems;
+    html += `<h3 class="non-printable">Multiplication solutions page</h3>`;
     html += svgSolutions;
 
     html += "</div>";

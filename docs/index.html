@@ -2,13 +2,22 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-00R0WQ3HH5');</script><style>html, body, div {
-        margin: 0px;
-        padding: 0px;        
+      gtag('config', 'G-00R0WQ3HH5');</script><style>html {
+        margin: 16px;
+      }
+      svg {
+        border: 1px solid gray;
       }
       @media print { 
         .non-printable { 
           display: none!important;
+        }
+        svg {
+          border: 0px solid transparent;
+        }
+        html, body, div {
+          margin: 0px;
+          padding: 0px;        
         }
       }
       .non-selectable {
@@ -16,4 +25,20 @@
         -webkit-user-select: none;
         user-select: none;
         cursor: default;
+      }
+      a.button {
+        border: 1px solid darkgray;
+        cursor: pointer;
+        background: lightgray;
+        color: darkblue;
+        font-weight: bold;
+        text-decoration: underline;
+        padding: 12px 36px;
+        margin: 12px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+      a.button:hover {
+        border: 1px solid gray;
+        background: white;
       }</style><script defer="defer" src="index.js"></script></head><body><script src="./src/index.js"></script></body></html>
